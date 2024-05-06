@@ -4,30 +4,28 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .header {
   background: darkmagenta;
   color: white;
   font-size: 32px;
-  font-weight: 900px;
+  font-weight: 900;
   padding: 16px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.main {
+.body {
   display: flex;
-  flex: 1 0 300px;
+  flex: 1;
 }
 
-.content {
-  display: inline-flex;
+.container {
+  display: flex;
   flex-wrap: wrap;
-  padding: 32px;
-  flex: 1 0 300px;
-  gap: 30px;
+  padding: 48px;
+  gap: 32px;
 }
 
 .footer {
@@ -44,19 +42,21 @@ body {
   box-sizing: border-box;
   padding: 16px;
   width: 300px;
+  flex-shrink: 0;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  height: 200px;
   width: 300px;
   padding: 20px;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
